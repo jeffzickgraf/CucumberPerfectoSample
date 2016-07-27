@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;features&#x2F;CucumberTest.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: Test if f1 feature is working</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: valid scenario</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  push home (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  close app &quot;com.android.vending&quot; (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  start app &quot;com.android.vending&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Page should be &quot;TopPage&quot; (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  app name input is &quot;test&quot; (failed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  result should contain 3rd (skipped)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  push home (skipped)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="BrowserSuite" duration-ms="56976" started-at="2016-07-26T02:41:08Z" finished-at="2016-07-26T02:42:05Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:main.java.com.test.AppiumTest@35d7386b]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test Android" duration-ms="56976" started-at="2016-07-26T02:41:08Z" finished-at="2016-07-26T02:42:05Z">
+      <class name="main.java.com.test.AppiumTest">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.com.test.AppiumTest@35d7386b]" name="BeforeClass" is-config="true" duration-ms="15227" started-at="2016-07-26T11:41:08Z" finished-at="2016-07-26T11:41:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo.perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[satoshio@perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[takumi0419]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[B5DED881]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="FAIL" signature="run_cukes()[pri:0, instance:main.java.com.test.AppiumTest@35d7386b]" name="run_cukes" duration-ms="9031" started-at="2016-07-26T11:41:23Z" description="Runs Cucumber Features" finished-at="2016-07-26T11:41:32Z">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@resource-id="com.android.vending:id/search_box_idle_text"]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'MacBookPro-2.local', ip: '192.168.1.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.5', java.version: '1.8.0_77'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@resource-id="com.android.vending:id/search_box_idle_text"]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'MacBookPro-2.local', ip: '192.168.1.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.5', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:197)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:642)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@resource-id="com.android.vending:id/search_box_idle_text"]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'MacBookPro-2.local', ip: '192.168.1.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.5', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:152)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:51)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$1c9b369e.sendKeys(<generated>)
+	at PageObjects.TopPageObjectAndroid.PutAppName(TopPageObjectAndroid.java:36)
+	at main.java.com.test.stepdefs.CucumberStepdefinitionTest.SearchAppName(CucumberStepdefinitionTest.java:55)
+	at ✽.Given app name input is "test"(src/test/resources/features/CucumberTest.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;features&#x2F;CucumberTest.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: Test if f1 feature is working</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: valid scenario</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  push home (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  close app &quot;com.android.vending&quot; (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  start app &quot;com.android.vending&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Page should be &quot;TopPage&quot; (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  app name input is &quot;test&quot; (failed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  result should contain 3rd (skipped)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  push home (skipped)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:main.java.com.test.AppiumTest@35d7386b]" name="afterTest" is-config="true" duration-ms="32647" started-at="2016-07-26T11:41:32Z" finished-at="2016-07-26T11:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- main.java.com.test.AppiumTest -->
+    </test> <!-- Test Android -->
+  </suite> <!-- BrowserSuite -->
+</testng-results>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [BrowserSuite]" parallel="tests">
+  <parameter name="mcm" value="demo.perfectomobile.com"/>
+  <parameter name="bEnablePersona" value="false"/>
+  <parameter name="mcmPassword" value="takumi0419"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="mcmUser" value="satoshio@perfectomobile.com"/>
+  <parameter name="deviceID" value="B5DED881"/>
+  <test name="Test Android(failed)" parallel="tests">
+    <classes>
+      <class name="main.java.com.test.AppiumTest">
+        <methods>
+          <include name="run_cukes"/>
+          <include name="BeforeClass"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- main.java.com.test.AppiumTest -->
+    </classes>
+  </test> <!-- Test Android(failed) -->
+</suite> <!-- Failed suite [BrowserSuite] -->
